@@ -13,7 +13,9 @@ The rise of deep neural networks has resulted in a great improvement in the perf
 
 **Supervisor:** Brian Chapman
 
+# Research Proposal
 
+<embed src="/images/2024-02-01-unimelb_research_project/Research Proposal_v2.pdf" width="100%" height="700px" type="application/pdf">
 
 # Thesis
 
