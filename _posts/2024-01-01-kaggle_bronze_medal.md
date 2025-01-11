@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Kaggle Competition: UBC Ovarian Cancer Subtype Classification and Outlier Detection"
-date:   2023-10-01
+date:   2024-01-01
 tags: [Computer Vision, Machine Learning, Kaggle Competition] 
 comments: true
 author: allen
