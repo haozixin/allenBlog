@@ -30,3 +30,5 @@ Archa is an award winning corporate credit card platform that integrates directl
 
 
 
+## Challenges
+I think the most challenging part was fixing the old unit tests. Before you can fix them, you have to understand the original business logic and what the test function is actually trying to check. I spent a lot of time digging through the codebase, looking for clues. 

@@ -29,7 +29,10 @@ Espressif is a global high-tech leader in wireless communication, IoT, AI SoCs, 
 - Skills: Python; MongoDB; Linux; PyMongo; Jupyter Notebook
 
 
+## Challenges
 
+I had to quickly learn the basics of the chip manufacturing industry and its terminology: 
+fields in the database like yield rate, Wafer ID, and Lot were unfamiliar to me. Some of the requirements were also unclear because they related to the chip testing process. So, I had to quickly grasp the essential industry knowledge and terms to fully understand the requirements. I think this was the biggest challenge during my internship, but I really enjoyed learning about a different industry outside of my field—it was quite interesting.  
 
 
 
