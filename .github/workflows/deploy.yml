@@ -33,7 +33,7 @@ jobs:
 
     - name: Generate _config.yml
       run: |
-        echo "name: '${{ secrets.BLOG_NAME }}'" > _config.yml
+        echo "name: '${{ secrets.BLOG_NAME }}'" > _config.yml 
         
   # Build job
   build: 
