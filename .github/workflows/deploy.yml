@@ -31,7 +31,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Generate _config.yml
-      run: |
+      run: | 
         # 检查并打印BLOG_NAME变量
         blog_name="${{ secrets.BLOG_NAME }}"
         if [ -n "${blog_name:-}" ]; then
