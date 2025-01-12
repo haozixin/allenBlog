@@ -59,7 +59,7 @@ jobs:
         echo "  owner: '${{ secrets.BLOG_GITALK_OWNER }}'" >> _config.yml
         echo "url: '${{ secrets.BLOG_URL }}'" >> _config.yml
   # Build job
-  build:
+  build: 
     runs-on: ubuntu-latest
 
     needs: setenv
