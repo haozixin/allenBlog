@@ -48,6 +48,17 @@ jobs:
         echo "paginate: '${{ secrets.BLOG_PAGINATE }}'" >> _config.yml
         echo "excerpt_separator: '${{ secrets.BLOG_EXCERPT_SEPARATOR }}'" >> _config.yml
         echo "footer-links:" >> _config.yml
+        echo "  email: '${{ secrets.BLOG_EMAIL }}'" >> _config.yml
+        echo "  github: '${{ secrets.BLOG_GITHUB }}'" >> _config.yml
+        echo "  linkedin: '${{ secrets.BLOG_LINKEDIN }}'" >> _config.yml
+        echo "  youtube: '${{ secrets.BLOG_YOUTUBE }}'" >> _config.yml
+        echo "footer-text: '${{ secrets.BLOG_FOOTER_TEXT }}'" >> _config.yml
+        echo "gitalk:" >> _config.yml
+        echo "  clientID: '${{ secrets.BLOG_GITALK_CLIENT_ID }}'" >> _config.yml
+        echo "  clientSecret: '${{ secrets.BLOG_GITALK_CLIENT_SECRET }}'" >> _config.yml
+        echo "  repo: '${{ secrets.BLOG_GITALK_REPO }}'" >> _config.yml
+        echo "  owner: '${{ secrets.BLOG_GITALK_OWNER }}'" >> _config.yml
+        echo "url: '${{ secrets.BLOG_URL }}'" >> _config.yml
         
   # Build job
   build: 
