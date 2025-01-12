@@ -52,5 +52,5 @@ On the platform of **Edge Impulse**, we did a mini research project.
 
 # Mini Report Display
 
-<embed src="/images/2023-11-01-overseas_online_research/2023-11-01-overseas_online_research.pdf" width="100%" height="700px" type="application/pdf">
+<embed src="../images/2023-11-01-overseas_online_research/2023-11-01-overseas_online_research.pdf" width="100%" height="700px" type="application/pdf">
 

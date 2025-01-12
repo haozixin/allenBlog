@@ -28,5 +28,5 @@ Although no single model is perfect, the study concludes that by choosing the ri
 ## Conference Name
 2024 2nd International Conference on Computer, Machine Learning and Artificial Intelligence (CMLAI 2024)
 
-<embed src="/images/2024-03-09-conference_paper_publishment/conference_accpet_letter.pdf" width="100%" height="700px" type="application/pdf">
+<embed src="../images/2024-03-09-conference_paper_publishment/conference_accpet_letter.pdf" width="100%" height="700px" type="application/pdf">
 

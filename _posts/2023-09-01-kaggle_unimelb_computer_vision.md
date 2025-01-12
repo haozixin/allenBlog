@@ -23,4 +23,5 @@ The project results submission process is strict and comprehensive. The code par
 
 ## Outcome
 
-<embed src="/images/2023-09-01-kaggle_unimelb_computer_vision/CV_Project 2.pdf" width="100%" height="700px" type="application/pdf">
+
+<embed src="../images/2023-09-01-kaggle_unimelb_computer_vision/CV_Project%202.pdf" width="100%" height="700px" type="application/pdf">
