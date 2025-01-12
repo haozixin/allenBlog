@@ -30,6 +30,25 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
+    - name: Debug Secrets
+      run: |
+        echo "BLOG_NAME: ${{ secrets.BLOG_NAME }}"
+        echo "BLOG_DESCRIPTION: ${{ secrets.BLOG_DESCRIPTION }}"
+        echo "BLOG_AVATAR: ${{ secrets.BLOG_AVATAR }}"
+        echo "BLOG_FAVICON: ${{ secrets.BLOG_FAVICON }}"
+        echo "BLOG_PAGINATE: ${{ secrets.BLOG_PAGINATE }}"
+        echo "BLOG_EXCERPT_SEPARATOR: ${{ secrets.BLOG_EXCERPT_SEPARATOR }}"
+        echo "BLOG_EMAIL: ${{ secrets.BLOG_EMAIL }}"
+        echo "BLOG_GITHUB: ${{ secrets.BLOG_GITHUB }}"
+        echo "BLOG_LINKEDIN: ${{ secrets.BLOG_LINKEDIN }}"
+        echo "BLOG_YOUTUBE: ${{ secrets.BLOG_YOUTUBE }}"
+        echo "BLOG_FOOTER_TEXT: ${{ secrets.BLOG_FOOTER_TEXT }}"
+        echo "BLOG_GITALK_CLIENT_ID: ${{ secrets.BLOG_GITALK_CLIENT_ID }}"
+        echo "BLOG_GITALK_CLIENT_SECRET: ${{ secrets.BLOG_GITALK_CLIENT_SECRET }}"
+        echo "BLOG_GITALK_REPO: ${{ secrets.BLOG_GITALK_REPO }}"
+        echo "BLOG_GITALK_OWNER: ${{ secrets.BLOG_GITALK_OWNER }}"
+        echo "BLOG_URL: ${{ secrets.BLOG_URL }}"
+
     - name: Generate _config.yml
       run: |
         echo "name: '${{ secrets.BLOG_NAME }}'" > _config.yml
