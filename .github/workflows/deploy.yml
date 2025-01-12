@@ -32,83 +32,146 @@ jobs:
 
     - name: Generate _config.yml
       run: |
-        # 检查BLOG_NAME变量
-        if [ -z "${{ secrets.BLOG_NAME }}" ]; then
+        # 检查并打印BLOG_NAME变量
+        blog_name="${{ secrets.BLOG_NAME }}"
+        if [ -n "${blog_name:-}" ]; then
+          echo "BLOG_NAME: $blog_name"
+        else
           echo "BLOG_NAME is empty. Workflow failed."
           exit 1
         fi
-        # 检查BLOG_DESCRIPTION变量
-        if [ -z "${{ secrets.BLOG_DESCRIPTION }}" ]; then
+
+        # 检查并打印BLOG_DESCRIPTION变量
+        blog_description="${{ secrets.BLOG_DESCRIPTION }}"
+        if [ -n "${blog_description:-}" ]; then
+          echo "BLOG_DESCRIPTION: $blog_description"
+        else
           echo "BLOG_DESCRIPTION is empty. Workflow failed."
           exit 1
         fi
-        # 检查BLOG_AVATAR变量
-        if [ -z "${{ secrets.BLOG_AVATAR }}" ]; then
+
+        # 检查并打印BLOG_AVATAR变量
+        blog_avatar="${{ secrets.BLOG_AVATAR }}"
+        if [ -n "${blog_avatar:-}" ]; then
+          echo "BLOG_AVATAR: $blog_avatar"
+        else
           echo "BLOG_AVATAR is empty. Workflow failed."
           exit 1
         fi
-        # 检查BLOG_FAVICON变量
-        if [ -z "${{ secrets.BLOG_FAVICON }}" ]; then
+
+        # 检查并打印BLOG_FAVICON变量
+        blog_favicon="${{ secrets.BLOG_FAVICON }}"
+        if [ -n "${blog_favicon:-}" ]; then
+          echo "BLOG_FAVICON: $blog_favicon"
+        else
           echo "BLOG_FAVICON is empty. Workflow failed."
           exit 1
         fi
-        # 检查BLOG_PAGINATE变量
-        if [ -z "${{ secrets.BLOG_PAGINATE }}" ]; then
+
+        # 检查并打印BLOG_PAGINATE变量
+        blog_paginate="${{ secrets.BLOG_PAGINATE }}"
+        if [ -n "${blog_paginate:-}" ]; then
+          echo "BLOG_PAGINATE: $blog_paginate"
+        else
           echo "BLOG_PAGINATE is empty. Workflow failed."
           exit 1
         fi
-        # 检查BLOG_EXCERPT_SEPARATOR变量
-        if [ -z "${{ secrets.BLOG_EXCERPT_SEPARATOR }}" ]; then
+
+        # 检查并打印BLOG_EXCERPT_SEPARATOR变量
+        blog_excerpt_separator="${{ secrets.BLOG_EXCERPT_SEPARATOR }}"
+        if [ -n "${blog_excerpt_separator:-}" ]; then
+          echo "BLOG_EXCERPT_SEPARATOR: $blog_excerpt_separator"
+        else
           echo "BLOG_EXCERPT_SEPARATOR is empty. Workflow failed."
           exit 1
         fi
-        # 检查BLOG_EMAIL变量
-        if [ -z "${{ secrets.BLOG_EMAIL }}" ]; then
+
+        # 检查并打印BLOG_EMAIL变量
+        blog_email="${{ secrets.BLOG_EMAIL }}"
+        if [ -n "${blog_email:-}" ]; then
+          echo "BLOG_EMAIL: $blog_email"
+        else
           echo "BLOG_EMAIL is empty. Workflow failed."
           exit 1
         fi
-        # 检查BLOG_GITHUB变量
-        if [ -z "${{ secrets.BLOG_GITHUB }}" ]; then
+
+        # 检查并打印BLOG_GITHUB变量
+        blog_github="${{ secrets.BLOG_GITHUB }}"
+        if [ -n "${blog_github:-}" ]; then
+          echo "BLOG_GITHUB: $blog_github"
+        else
           echo "BLOG_GITHUB is empty. Workflow failed."
           exit 1
         fi
-        # 检查BLOG_LINKEDIN变量
-        if [ -z "${{ secrets.BLOG_LINKEDIN }}" ]; then
+
+        # 检查并打印BLOG_LINKEDIN变量
+        blog_linkedin="${{ secrets.BLOG_LINKEDIN }}"
+        if [ -n "${blog_linkedin:-}" ]; then
+          echo "BLOG_LINKEDIN: $blog_linkedin"
+        else
           echo "BLOG_LINKEDIN is empty. Workflow failed."
           exit 1
         fi
-        # 检查BLOG_YOUTUBE变量
-        if [ -z "${{ secrets.BLOG_YOUTUBE }}" ]; then
+
+        # 检查并打印BLOG_YOUTUBE变量
+        blog_youtube="${{ secrets.BLOG_YOUTUBE }}"
+        if [ -n "${blog_youtube:-}" ]; then
+          echo "BLOG_YOUTUBE: $blog_youtube"
+        else
           echo "BLOG_YOUTUBE is empty. Workflow failed."
           exit 1
         fi
-        # 检查BLOG_FOOTER_TEXT变量
-        if [ -z "${{ secrets.BLOG_FOOTER_TEXT }}" ]; then
+
+        # 检查并打印BLOG_FOOTER_TEXT变量
+        blog_footer_text="${{ secrets.BLOG_FOOTER_TEXT }}"
+        if [ -n "${blog_footer_text:-}" ]; then
+          echo "BLOG_FOOTER_TEXT: $blog_footer_text"
+        else
           echo "BLOG_FOOTER_TEXT is empty. Workflow failed."
           exit 1
         fi
-        # 检查BLOG_GITALK_CLIENT_ID变量
-        if [ -z "${{ secrets.BLOG_GITALK_CLIENT_ID }}" ]; then
+
+        # 检查并打印BLOG_GITALK_CLIENT_ID变量
+        blog_gitalk_client_id="${{ secrets.BLOG_GITALK_CLIENT_ID }}"
+        if [ -n "${blog_gitalk_client_id:-}" ]; then
+          echo "BLOG_GITALK_CLIENT_ID: $blog_gitalk_client_id"
+        else
           echo "BLOG_GITALK_CLIENT_ID is empty. Workflow failed."
           exit 1
         fi
-        # 检查BLOG_GITALK_CLIENT_SECRET变量
-        if [ -z "${{ secrets.BLOG_GITALK_CLIENT_SECRET }}" ]; then
+
+        # 检查并打印BLOG_GITALK_CLIENT_SECRET变量
+        blog_gitalk_client_secret="${{ secrets.BLOG_GITALK_CLIENT_SECRET }}"
+        if [ -n "${blog_gitalk_client_secret:-}" ]; then
+          echo "BLOG_GITALK_CLIENT_SECRET: $blog_gitalk_client_secret"
+        else
           echo "BLOG_GITALK_CLIENT_SECRET is empty. Workflow failed."
           exit 1
         fi
-        # 检查BLOG_GITALK_REPO变量
-        if [ -z "${{ secrets.BLOG_GITALK_REPO }}" ]; then
+
+        # 检查并打印BLOG_GITALK_REPO变量
+        blog_gitalk_repo="${{ secrets.BLOG_GITALK_REPO }}"
+        if [ -n "${blog_gitalk_repo:-}" ]; then
+          echo "BLOG_GITALK_REPO: $blog_gitalk_repo"
+        else
           echo "BLOG_GITALK_REPO is empty. Workflow failed."
           exit 1
         fi
-        # 检查BLOG_GITALK_OWNER变量
-        if [ -z "${{ secrets.BLOG_GITALK_OWNER }}" ]; then
+
+        # 检查并打印BLOG_GITALK_OWNER变量
+        blog_gitalk_owner="${{ secrets.BLOG_GITALK_OWNER }}"
+        if [ -n "${blog_gitalk_owner:-}" ]; then
+          echo "BLOG_GITALK_OWNER: $blog_gitalk_owner"
+        else
           echo "BLOG_GITALK_OWNER is empty. Workflow failed."
           exit 1
         fi
-        # 检查BLOG_URL变量
-        if [ -z "${{ secrets.BLOG_URL }}" ]; then
+
+        # 检查并打印BLOG_URL变量
+        blog_url="${{ secrets.BLOG_URL }}"
+        if [ -n "${blog_url:-}" ]; then
+          echo "BLOG_URL: $blog_url"
+        else
           echo "BLOG_URL is empty. Workflow failed."
           exit 1
         fi
