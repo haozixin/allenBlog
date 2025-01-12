@@ -33,12 +33,21 @@ jobs:
 
     - name: Generate _config.yml
       run: |
-        echo "name: Allen\'s Blog" > _config.yml
+        echo "name: Allen's Blog" > _config.yml
         echo "description: '${{ secrets.BLOG_DESCRIPTION }}'" >> _config.yml
         echo "avatar: '${{ secrets.BLOG_AVATAR }}'" >> _config.yml
         echo "favicon: '${{ secrets.BLOG_FAVICON }}'" >> _config.yml
         echo "navigation:" >> _config.yml
         echo "  - name: HomePage" >> _config.yml 
+        echo "    url: /" >> _config.yml
+        echo "  - name: About" >> _config.yml
+        echo "    url: /about" >> _config.yml
+        echo "  - name: Archive" >> _config.yml
+        echo "    url: /archive" >> _config.yml
+        echo "  - name: Tags" >> _config.yml
+        echo "paginate: '${{ secrets.BLOG_PAGINATE }}'" >> _config.yml
+        echo "excerpt_separator: '${{ secrets.BLOG_EXCERPT_SEPARATOR }}'" >> _config.yml
+        echo "footer-links:" >> _config.yml
         
   # Build job
   build: 
