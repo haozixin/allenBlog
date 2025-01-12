@@ -25,6 +25,7 @@ jobs:
 
   setenv:
     runs-on: ubuntu-latest
+    environment: github-pages
 
     steps:
     - name: Checkout repository
