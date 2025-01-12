@@ -23,7 +23,7 @@ concurrency:
 
 jobs:
 
-  deploy:
+  setenv:
     runs-on: ubuntu-latest
 
     steps:
