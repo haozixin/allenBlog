@@ -19,4 +19,4 @@ I pride myself on being curious about new things, eager to learn new skills, and
 
 ## My CV
 
-<embed src="/cv.pdf" width="100%" height="700px" type="application/pdf">
+<embed src="../cv.pdf" width="100%" height="700px" type="application/pdf">
