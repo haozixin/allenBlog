@@ -1,0 +1,43 @@
+name: set blog env
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Generate _config.yml
+      run: |
+        echo "name: '${{ secrets.BLOG_NAME }}'" > _config.yml
+        echo "description: '${{ secrets.BLOG_DESCRIPTION }}'" >> _config.yml
+        echo "avatar: '${{ secrets.BLOG_AVATAR }}'" >> _config.yml
+        echo "favicon: '${{ secrets.BLOG_FAVICON }}'" >> _config.yml
+        echo "navigation:" >> _config.yml
+        echo "  - name: HomePage" >> _config.yml
+        echo "    url: /" >> _config.yml
+        echo "  - name: About" >> _config.yml
+        echo "    url: /about" >> _config.yml
+        echo "  - name: Archive" >> _config.yml
+        echo "    url: /archive" >> _config.yml
+        echo "  - name: Tags" >> _config.yml
+        echo "paginate: ${{ secrets.BLOG_PAGINATE }}" >> _config.yml
+        echo "excerpt_separator: '${{ secrets.BLOG_EXCERPT_SEPARATOR }}'" >> _config.yml
+        echo "footer-links:" >> _config.yml
+        echo "  email: '${{ secrets.BLOG_EMAIL }}'" >> _config.yml
+        echo "  github: '${{ secrets.BLOG_GITHUB }}'" >> _config.yml
+        echo "  linkedin: '${{ secrets.BLOG_LINKEDIN }}'" >> _config.yml
+        echo "  youtube: '${{ secrets.BLOG_YOUTUBE }}'" >> _config.yml
+        echo "footer-text: '${{ secrets.BLOG_FOOTER_TEXT }}'" >> _config.yml
+        echo "gitalk:" >> _config.yml
+        echo "  clientID: '${{ secrets.BLOG_GITALK_CLIENT_ID }}'" >> _config.yml
+        echo "  clientSecret: '${{ secrets.BLOG_GITALK_CLIENT_SECRET }}'" >> _config.yml
+        echo "  repo: '${{ secrets.BLOG_GITALK_REPO }}'" >> _config.yml
+        echo "  owner: '${{ secrets.BLOG_GITALK_OWNER }}'" >> _config.yml
+        echo "url: '${{ secrets.BLOG_URL }}'" >> _config.yml
