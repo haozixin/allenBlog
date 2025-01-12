@@ -33,7 +33,12 @@ jobs:
 
     - name: Generate _config.yml
       run: |
-        echo "name: '${{ secrets.BLOG_NAME }}'" > _config.yml 
+        echo "name: Allen\'s Blog" > _config.yml
+        echo "description: '${{ secrets.BLOG_DESCRIPTION }}'" >> _config.yml
+        echo "avatar: '${{ secrets.BLOG_AVATAR }}'" >> _config.yml
+        echo "favicon: '${{ secrets.BLOG_FAVICON }}'" >> _config.yml
+        echo "navigation:" >> _config.yml
+        echo "  - name: HomePage" >> _config.yml 
         
   # Build job
   build: 
