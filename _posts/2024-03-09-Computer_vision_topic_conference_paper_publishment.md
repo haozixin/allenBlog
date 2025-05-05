@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Conference Paper Publishment"
+title: "Conference Paper Publishment - Computer Vision Image Segementation (U-net) topic"
 date:   2023-11-01
 tags: [research paper]
 comments: true
