@@ -26,7 +26,7 @@ Clemenger Media Sales (CMS) is an independent advertising sales agency specializ
 
 - Conducted user testing and gathered feedback to identify usability and performance issues; proposed and implemented targeted enhancements to improve overall site functionality and engagement.
 
-- Designed and delivered high-fidelity prototypes for key web pages, facilitating clear communication with stakeholders and aligning development with user-centered design principles. One of the link for high-fidelity: https://nicc-walkabout-redesign-2.vercel.app/
+- Designed and delivered high-fidelity prototypes for key web pages, facilitating clear communication with stakeholders and aligning development with user-centered design principles. One of the link for high-fidelity: **_<u> https://nicc-walkabout-redesign-2.vercel.app/ </u>_**
 
 
 
